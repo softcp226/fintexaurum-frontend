@@ -124,7 +124,7 @@ const createAndAppendElement = (data) => {
   const statusH4 = document.createElement("h4");
   const approveBTN = document.createElement("button");
   const disaproveBTN = document.createElement("button");
-  userH4.innerHTML = data.user.email;
+  userH4.innerHTML = data.user? data.user.email :"deleted user";
   loanTypeH4.innerHTML = data.loan_type;
   amountH4.innerHTML = `$${data.loan_amount} `;
   interestH4.innerHTML = data.interest || "unspecified";
