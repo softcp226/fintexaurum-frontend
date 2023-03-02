@@ -81,7 +81,7 @@ const registerUser = async (email, phone_number, country) => {
           email,
           phone_number,
           country,
-          referral: getReferral() || "null",
+          referral: getReferral()||"null",
         }),
       },
     );

@@ -18,11 +18,11 @@ const createAndAppendElement = (element) => {
   totalReturnH4.innerHTML = element.total_return;
   statusH4.innerHTML = element.status;
 
-    element.status == "failed"
-      ? (statusH4.className = "status-fail")
-      : element.status == "pending"
-      ? (statusH4.className = "status-pending")
-      : (statusH4.className = "status-success");
+  element.status == "failed"
+    ? (statusH4.className = "status-fail")
+    : element.status == "pending"
+    ? (statusH4.className = "status-pending")
+    : (statusH4.className = "status-success");
   //   //   const tr_dH4 = document.createElement("h4");
   //   // const ltH4 = document.createElement("h4");
   //   //   let refH4 = document.createElement("h4");
@@ -78,12 +78,11 @@ const shape_result = (userInfo) => {
     console.log(result);
     if (result.error) {
       document.querySelector(".errMessage").innerHTML = result.errMessage;
+    } else {
+      shape_result(result.message);
     }
-
-     shape_result(result.message);
-    
   } catch (err) {
-    console.log(err)
+    console.log(err);
     document.querySelector(".errMessage").innerHTML = err.message;
   }
 })();
