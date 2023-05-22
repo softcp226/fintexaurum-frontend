@@ -37,8 +37,8 @@ const loginUser = async (email, password) => {
   try {
     document.querySelector("#login").innerHTML = "proccessing...";
     const response = await fetch(
-      // "https://fintexaurum-backend.glitch.me/api/user/login",
-      "http://localhost:3000/api/user/login",
+      "https://fintexaurum-backend.glitch.me/api/user/login",
+      // "http://localhost:3000/api/user/login",
 
       {
         method: "POST",
@@ -69,8 +69,8 @@ const complete_registration = async (userInfo) => {
   try {
     document.querySelector("#register").innerHTML = "proccessing...";
     const response = await fetch(
-      // "https://fintexaurum-backend.glitch.me/api/new_user/complete_registration",
-      "http://localhost:3000/api/new_user/complete_registration",
+      "https://fintexaurum-backend.glitch.me/api/new_user/complete_registration",
+      // "http://localhost:3000/api/new_user/complete_registration",
 
       {
         method: "POST",

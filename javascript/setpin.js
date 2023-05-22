@@ -20,8 +20,8 @@ const handle_submitpin = async (data) => {
   try {
     document.querySelector("#next").innerHTML = "proccessing...";
     const response = await fetch(
-      // "https://fintexaurum-backend.glitch.me/api/user/setpin",
-      "http://localhost:3000/api/user/setpin",
+      "https://fintexaurum-backend.glitch.me/api/user/setpin",
+      // "http://localhost:3000/api/user/setpin",
 
       {
         method: "POST",

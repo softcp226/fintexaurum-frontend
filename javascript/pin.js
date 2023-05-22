@@ -18,7 +18,10 @@ function setCookie(pin) {
 const handle_submitpin = async (data) => {
   try {
     document.querySelector("#next").innerHTML = "proccessing...";
-    const response = await fetch("http://localhost:3000/api/user/verifypin", {
+    const response = await fetch(
+      "https://fintexaurum-backend.glitch.me/api/user/verifypin",
+      // "http://localhost:3000/api/user/verifypin",
+       {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
