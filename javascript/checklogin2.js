@@ -1,4 +1,3 @@
-
 const look_for_user = (cname) => {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
@@ -32,7 +31,7 @@ const look_for_user = (cname) => {
     }
     if (c.indexOf(name) == 0) {
       look_for_user("user");
-      look_for_user("pin");
+      // look_for_user("pin");
       return;
       // return c.substring(name.length, c.length);
     }

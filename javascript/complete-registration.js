@@ -13,7 +13,7 @@ function setCookie(user, token) {
     //   navigate = param[0];
     // }
     // if (navigate) return window.location.replace(navigate);
-   window.location.replace("/dashboard.html")
+   window.location.replace("/setpin.html")
   }
 
 // function setCookie_01(user, token) {
@@ -37,7 +37,9 @@ const loginUser = async (email, password) => {
   try {
     document.querySelector("#login").innerHTML = "proccessing...";
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/login",
+      // "https://fintexaurum-backend.glitch.me/api/user/login",
+      "http://localhost:3000/api/user/login",
+
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -53,7 +55,10 @@ const loginUser = async (email, password) => {
     }
     document.querySelector("#login").innerHTML = "success";
     setCookie( result.message.user, result.token);
-    window.location.replace("/dashboard.html");
+    // window.location.replace("/dashboard.html");
+    
+    if (result.message.pinexist) return window.location.replace("/pin.html");
+    window.location.replace("/setpin.html");
   } catch (err) {
     document.querySelector(".errMessage").innerHTML = err.message;
     document.querySelector("#login").innerHTML = "try again";
@@ -64,7 +69,9 @@ const complete_registration = async (userInfo) => {
   try {
     document.querySelector("#register").innerHTML = "proccessing...";
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/new_user/complete_registration",
+      // "https://fintexaurum-backend.glitch.me/api/new_user/complete_registration",
+      "http://localhost:3000/api/new_user/complete_registration",
+
       {
         method: "POST",
         //   headers: { "content-type": "application/json" },
