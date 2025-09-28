@@ -20,7 +20,7 @@ const handle_submitpin = async (data) => {
   try {
     document.querySelector("#next").innerHTML = "proccessing...";
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/setpin",
+      "https://fintexau-backend-production.up.railway.app/api/user/setpin",
       // "http://localhost:3000/api/user/setpin",
 
       {

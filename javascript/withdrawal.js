@@ -19,7 +19,7 @@ const handle_withdrawal = async (form) => {
   try {
     document.querySelector("#submit").innerHTML = "proccessing...";
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/withdraw",
+      "https://fintexau-backend-production.up.railway.app/api/user/withdraw",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

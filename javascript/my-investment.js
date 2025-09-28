@@ -19,7 +19,7 @@ let handle_cancel_investment = async (button, investment) => {
   try {
     button.innerHTML = "proccessing...";
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/investment/cancel",
+      "https://fintexau-backend-production.up.railway.app/api/user/investment/cancel",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -107,7 +107,7 @@ const shape_result = (investments) => {
   let user = getCookie("user");
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/investments/fetch",
+      "https://fintexau-backend-production.up.railway.app/api/user/investments/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

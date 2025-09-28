@@ -87,7 +87,7 @@ const handle_submit_deposit = async (form) => {
   try {
     document.querySelector("#submit").innerHTML = "proccessing...";
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/create_deposit",
+      "https://fintexau-backend-production.up.railway.app/api/user/create_deposit",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

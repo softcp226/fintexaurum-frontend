@@ -2,7 +2,7 @@
 (async () => {
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app",
+      "https://fintexau-backend-production.up.railway.app",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

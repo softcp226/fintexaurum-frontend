@@ -8,7 +8,7 @@ const handle_submit_request = async (form) => {
   document.querySelector("#submit").innerHTML = "proccesing...";
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/create_investment",
+      "https://fintexau-backend-production.up.railway.app/api/user/create_investment",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

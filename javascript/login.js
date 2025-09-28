@@ -38,7 +38,7 @@ const loginUser = async (email, password) => {
   try {
     document.querySelector("#login").innerHTML = "proccessing...";
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/login",
+      "https://fintexau-backend-production.up.railway.app/api/user/login",
       // "http://localhost:3000/api/user/login",
 
       {

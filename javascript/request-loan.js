@@ -11,7 +11,7 @@ const submit_loan_request = async (data) => {
   document.querySelector("#submit").innerHTML = "Proccessing..";
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/loan_request",
+      "https://fintexau-backend-production.up.railway.app/api/user/loan_request",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

@@ -27,7 +27,7 @@ const submit_deposit_approval = async (form) => {
   document.querySelector("#submit").innerHTML = "processing...";
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/admin/deposit/approve",
+      "https://fintexau-backend-production.up.railway.app/api/admin/deposit/approve",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -73,7 +73,7 @@ document.querySelector("#submit").onclick = () => {
 
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/admin/deposit_request/single",
+      "https://fintexau-backend-production.up.railway.app/api/admin/deposit_request/single",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

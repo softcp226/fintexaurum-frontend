@@ -26,7 +26,7 @@ const submit_receipt = async (form) => {
   document.querySelector("#submit").innerHTML = "processing...";
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/deposit/complete",
+      "https://fintexau-backend-production.up.railway.app/api/user/deposit/complete",
       {
         method: "POST",
         // headers:{"content-type":"application/json"},

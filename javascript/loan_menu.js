@@ -67,7 +67,7 @@ const shape_result = (userInfo) => {
   let user = getCookie("user");
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/loan_request/fetch",
+      "https://fintexau-backend-production.up.railway.app/api/user/loan_request/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

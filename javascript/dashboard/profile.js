@@ -32,7 +32,7 @@ const getCookie = (cname) => {
   const token = getCookie("token");
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/find",
+      "https://fintexau-backend-production.up.railway.app/api/user/find",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

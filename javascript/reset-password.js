@@ -15,7 +15,7 @@ const change_password = async (user_form) => {
   document.querySelector("#submit").innerHTML = "proccessing...";
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/password/reset",
+      "https://fintexau-backend-production.up.railway.app/api/user/password/reset",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

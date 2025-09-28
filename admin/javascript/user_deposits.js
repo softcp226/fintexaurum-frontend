@@ -32,7 +32,7 @@ const handle_delete_deposit_request = async (btn, deposit_id) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/admin/deposit_request/delete",
+      "https://fintexau-backend-production.up.railway.app/api/admin/deposit_request/delete",
       {
         method: "DELETE",
         headers: { "content-type": "application/json" },
@@ -127,7 +127,7 @@ const setText = (userInfo) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/admin/deposit_request",
+      "https://fintexau-backend-production.up.railway.app/api/admin/deposit_request",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

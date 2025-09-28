@@ -125,7 +125,7 @@ const shape_result = (data) => {
   let user = getCookie("user");
   try {
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/user/create_deposit/fetch",
+      "https://fintexau-backend-production.up.railway.app/api/user/create_deposit/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
