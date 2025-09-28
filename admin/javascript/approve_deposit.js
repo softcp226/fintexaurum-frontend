@@ -27,7 +27,7 @@ const submit_deposit_approval = async (form) => {
   document.querySelector("#submit").innerHTML = "processing...";
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/admin/deposit/approve",
+      "fintexau-backend-production.up.railway.app/api/admin/deposit/approve",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -73,7 +73,7 @@ document.querySelector("#submit").onclick = () => {
 
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/admin/deposit_request/single",
+      "fintexau-backend-production.up.railway.app/api/admin/deposit_request/single",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

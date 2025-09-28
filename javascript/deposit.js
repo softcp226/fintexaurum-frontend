@@ -87,7 +87,7 @@ const handle_submit_deposit = async (form) => {
   try {
     document.querySelector("#submit").innerHTML = "proccessing...";
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/create_deposit",
+      "fintexau-backend-production.up.railway.app/api/user/create_deposit",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

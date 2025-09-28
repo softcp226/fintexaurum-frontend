@@ -8,7 +8,7 @@ const handle_submit_request = async (form) => {
   document.querySelector("#submit").innerHTML = "proccesing...";
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/create_investment",
+      "fintexau-backend-production.up.railway.app/api/user/create_investment",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

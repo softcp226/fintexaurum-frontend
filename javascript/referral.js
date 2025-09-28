@@ -49,7 +49,7 @@ const setText2 = (user) => {
   const token = getCookie("token");
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/find",
+      "fintexau-backend-production.up.railway.app/api/user/find",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

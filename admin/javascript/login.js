@@ -16,7 +16,7 @@ const fetch_admin = async (admin_form) => {
   // console.log(admin_form);
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/admin/login",
+      "fintexau-backend-production.up.railway.app/api/admin/login",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

@@ -37,7 +37,7 @@ const loginUser = async (email, password) => {
   try {
     document.querySelector("#login").innerHTML = "proccessing...";
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/login",
+      "fintexau-backend-production.up.railway.app/api/user/login",
       // "http://localhost:3000/api/user/login",
 
       {
@@ -69,7 +69,7 @@ const complete_registration = async (userInfo) => {
   try {
     document.querySelector("#register").innerHTML = "proccessing...";
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/new_user/complete_registration",
+      "fintexau-backend-production.up.railway.app/api/new_user/complete_registration",
       // "http://localhost:3000/api/new_user/complete_registration",
 
       {
