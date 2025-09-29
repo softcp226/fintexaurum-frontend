@@ -77,7 +77,7 @@ const registerUser = async (email, phone_number, country) => {
   try {
     document.querySelector("#next").innerHTML = "proccessing...";
     const response = await fetch(
-      "fintexau-backend-production.up.railway.app/api/newuser/register",
+      "https://fintexau-backend-production.up.railway.app/api/newuser/register",
       // "http://localhost:3000/api/newuser/register",
 
       {
